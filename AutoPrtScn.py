@@ -25,10 +25,7 @@ def dif(lim, limg):
             for n in range(100,980):
                 sum = sum + (pix[m,n]-afterPix[m,n]) ** 2
         print(math.sqrt(sum)//1)
-        if(math.sqrt(sum)/1920 > 10):
-            return True
-        else:
-            return False
+        return math.sqrt(sum)/1920 > 10
 #最新的图片如果不相似返回true,有时候老师不停上下翻页
 def comList():
     flag = True
